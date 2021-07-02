@@ -1,0 +1,11 @@
+<h1>Frenz:</h1>
+<mat-list>
+  <mat-list-item *ngFor="let friend of friendList" (click)="onSelect(friend)"> 
+    <img matListAvatar src="/assets/avatars/{{friend.avatar}}" />
+    <h3 matLine> {{friend.name}} </h3>
+    <p matLine>
+      <span> {{friend.description}} </span>
+    </p>
+    <mat-divider></mat-divider>
+  </mat-list-item>
+</mat-list>
